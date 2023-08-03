@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1170px;
+  padding-inline: 1rem;
+}
+
+h1 {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+span {
+  color: steelblue;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn:active {
+  scale: 0.95;
+}
