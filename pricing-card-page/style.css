@@ -1,9 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+:root {
+  --ff-Primary: "Roboto", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --clr-dark-black: #191b1d;
+  --clr-light-black: #22262c;
+  --clr-gray: #9d9ea1;
+  --clr-white: #fff;
+  --clr-dark-pink: #b91e49;
+  --clr-hotpink: #bc1e4a;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* write your CSS here */
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: var(--ff-Primary);
+  background-color: var(--clr-dark-black);
+  color: var(--clr-white);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Aside */
+.current-plan-container {
+  background-color: var(--clr-hotpink);
+  border-radius: 0 0 10px 10px;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.current-plan {
+  padding: 1rem;
+  text-align: center;
+}
+
+.current-plan p {
+  font-weight: var(--fw-700);
+  letter-spacing: 1px;
+}
+
+.current-plan-mau::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  aspect-ratio: 1;
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  transform: translateY(-60%);
+  margin-right: 5px;
+}
+
+/* Featured Content */
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-content h1 {
+  margin-block: 2rem;
+}
+
+/* 
+  Toggle Component
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-inline: 5px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  cursor: pointer;
+  position: absolute;
+  inset: 0;
+  background-color: var(--clr-hotpink);
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  aspect-ratio: 1;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--clr-white);
+  transition: 0.4s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(100%);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}

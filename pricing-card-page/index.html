@@ -8,78 +8,84 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <aside>
+    <aside class="current-plan-container">
       <div class="current-plan">
-        <small>Your current plan</small>
+        <small>Your current plan:</small>
         <p>Starter Trial <span class="current-plan-mau">500MAUs</span></p>
       </div>
     </aside>
     <main>
-      <h1>Choose a plan</h1>
-      <!-- Toggle Component -->
-      <div class="toggle-component">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider"></span>
-        </label>
-      </div>
-      <div class="cards-grid">
-        <div class="card">
-          <header class="card-header">
-            <h2>Starter</h2>
-            <p id="price" class="price" data-price="19">$19</p>
-          </header>
-          <div class="card-features">
-            <ul class="card-list">
-              <li>500 MAUs</li>
-              <li>3 projects</li>
-              <li>Unlimited guides</li>
-              <li>Unlimited flows</li>
-              <li>Unlimited branded themes</li>
-              <li>Email support</li>
-            </ul>
+      <div class="wrapper">
+        <div class="featured-content">
+          <h1>Choose a plan</h1>
+          <!-- Toggle Component -->
+          <div class="toggle-component">
+            <small>Billed monthly</small>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <small>Billed anually</small>
           </div>
-          <button class="btn-primary">Choose Plan</button>
-        </div>
-        <div class="card" data-price="99">
-          <header class="card-header">
-            <h2>Pro</h2>
-            <p id="price" class="price" data-price="99">
-              $99<span class="price-monthly">/month</span>
-            </p>
-          </header>
-          <div class="mau-counter-container">
-            <div class="mau-dropdown">
-              <p>2500 MAUs</p>
-              <span class="arrow-icon"></span>
+          <div class="cards-grid">
+            <div class="card">
+              <header class="card-header">
+                <h2>Starter</h2>
+                <p id="price" class="price" data-price="19">$19</p>
+              </header>
+              <div class="card-features">
+                <ul class="card-list">
+                  <li>500 MAUs</li>
+                  <li>3 projects</li>
+                  <li>Unlimited guides</li>
+                  <li>Unlimited flows</li>
+                  <li>Unlimited branded themes</li>
+                  <li>Email support</li>
+                </ul>
+              </div>
+              <button class="btn-primary">Choose Plan</button>
             </div>
-            <small class="mau-acronym">Monthly active users</small>
+            <div class="card" data-price="99">
+              <header class="card-header">
+                <h2>Pro</h2>
+                <p id="price" class="price" data-price="99">
+                  $99<span class="price-monthly">/month</span>
+                </p>
+              </header>
+              <div class="mau-counter-container">
+                <div class="mau-dropdown">
+                  <p>2500 MAUs</p>
+                  <span class="arrow-icon"></span>
+                </div>
+                <small class="mau-acronym">Monthly active users</small>
+              </div>
+              <div class="card-features">
+                <ul class="card-list">
+                  <li>All starter features, plus:</li>
+                  <li>Unlimited projects</li>
+                  <li>Unlimited fully customizable themes</li>
+                  <li>A dedicated Customer Success Manager</li>
+                </ul>
+              </div>
+              <button class="btn-primary btn--mod">Choose Plan</button>
+            </div>
+            <div class="card">
+              <header class="card-header">
+                <h2>Enterprise</h2>
+                <p>Let's Talk!</p>
+              </header>
+              <div class="card-features">
+                <ul class="card-list">
+                  <li>All Pro features</li>
+                  <li>Unlimited MAUs</li>
+                  <li>Dedicated environment</li>
+                  <li>Enterprise account administration</li>
+                  <li>Premium support and services</li>
+                </ul>
+              </div>
+              <button class="btn-primary">Contact Us</button>
+            </div>
           </div>
-          <div class="card-features">
-            <ul class="card-list">
-              <li>All starter features, plus:</li>
-              <li>Unlimited projects</li>
-              <li>Unlimited fully customizable themes</li>
-              <li>A dedicated Customer Success Manager</li>
-            </ul>
-          </div>
-          <button class="btn-primary btn--mod">Choose Plan</button>
-        </div>
-        <div class="card">
-          <header class="card-header">
-            <h2>Enterprise</h2>
-            <p>Let's Talk!</p>
-          </header>
-          <div class="card-features">
-            <ul class="card-list">
-              <li>All Pro features</li>
-              <li>Unlimited MAUs</li>
-              <li>Dedicated environment</li>
-              <li>Enterprise account administration</li>
-              <li>Premium support and services</li>
-            </ul>
-          </div>
-          <button class="btn-primary">Contact Us</button>
         </div>
       </div>
     </main>
