@@ -33,11 +33,39 @@ body {
 }
 
 .wrapper {
-  max-width: 1170px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.btn-primary {
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  border: 1px solid var(--clr-hotpink);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--clr-white);
+  font-size: 1.125rem;
+  padding-block: 1em;
+  letter-spacing: 1px;
+  transition: 200ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--clr-hotpink);
+}
+
+.btn--mod {
+  background-color: var(--clr-hotpink);
+}
+
+.btn--mod:hover,
+.btn--mod:focus {
+  background-color: transparent;
 }
 
 /* Aside */
@@ -78,7 +106,7 @@ body {
 }
 
 .featured-content h1 {
-  margin-block: 2rem;
+  margin-block: 1.5rem;
 }
 
 /* 
@@ -128,4 +156,98 @@ input:checked + .slider::before {
 
 .slider.round::before {
   border-radius: 50%;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-block: 2rem;
+}
+
+.card {
+  background-color: var(--clr-light-black);
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-header h2 {
+  font-weight: var(--fw-400);
+  margin-bottom: 1rem;
+}
+
+.card-header .price {
+  font-size: 4rem;
+  font-weight: var(--fw-700);
+}
+
+.enterprise-price {
+  font-size: 2.5rem;
+  font-weight: var(--fw-700);
+}
+
+.card:nth-child(odd) .card-features {
+  margin-block: 4rem 3rem;
+}
+
+.price-monthly {
+  font-size: 1rem;
+}
+
+.mau-counter-container {
+  margin-top: 2rem;
+}
+
+.mau-counter {
+  border: 1px solid var(--clr-gray);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.25rem;
+}
+
+.arrow-icon {
+  color: hsl(0, 0%, 45%, 0.5);
+}
+
+.mau-acronym {
+  color: var(--clr-dark-pink);
+  margin-left: 1rem;
+}
+
+.card-list--pro {
+  margin-block: 3rem;
+}
+
+.card-list li + li {
+  margin-top: 1rem;
+}
+
+.card-list li {
+  position: relative;
+}
+
+.card-list li::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--clr-hotpink);
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+}
+
+@media (min-width: 1000px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

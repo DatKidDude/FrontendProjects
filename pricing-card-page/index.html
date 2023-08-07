@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Card Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -31,7 +38,7 @@
             <div class="card">
               <header class="card-header">
                 <h2>Starter</h2>
-                <p id="price" class="price" data-price="19">$19</p>
+                <p id="price" class="price">$19</p>
               </header>
               <div class="card-features">
                 <ul class="card-list">
@@ -45,22 +52,24 @@
               </div>
               <button class="btn-primary">Choose Plan</button>
             </div>
-            <div class="card" data-price="99">
+            <div class="card">
               <header class="card-header">
                 <h2>Pro</h2>
-                <p id="price" class="price" data-price="99">
-                  $99<span class="price-monthly">/month</span>
+                <p id="price" class="price">
+                  $99<span class="price-monthly">/ month</span>
                 </p>
               </header>
               <div class="mau-counter-container">
-                <div class="mau-dropdown">
+                <div class="mau-counter">
                   <p>2500 MAUs</p>
-                  <span class="arrow-icon"></span>
+                  <span class="arrow-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
                 </div>
                 <small class="mau-acronym">Monthly active users</small>
               </div>
               <div class="card-features">
-                <ul class="card-list">
+                <ul class="card-list card-list--pro">
                   <li>All starter features, plus:</li>
                   <li>Unlimited projects</li>
                   <li>Unlimited fully customizable themes</li>
@@ -72,7 +81,7 @@
             <div class="card">
               <header class="card-header">
                 <h2>Enterprise</h2>
-                <p>Let's Talk!</p>
+                <p class="enterprise-price">Let's Talk!</p>
               </header>
               <div class="card-features">
                 <ul class="card-list">
