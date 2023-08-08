@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "username": "Emily Williams",
+      "title": "Impressive Curriculum",
+      "comment": "I have tried several platforms in the past, but none have been as comprehensive and well-structured as CodingSpace.",
+      "role": "Frontend Developer at Google",
+      "imageUrl": "QXevDflbl8A"
+    },
+    {
+      "username": "Sarah Johnson",
+      "title": "Great for Beginners",
+      "comment": "I am a beginner in coding and Codingspace has been a great resource for me. I really like the interactive coding exercises.",
+      "role": "UI Developer at Razorpay",
+      "imageUrl": "mEZ3PoFGs_k"
+    },
+    {
+      "username": "Michael Johnson",
+      "title": "Great Experience",
+      "comment": "I have been using Codingspace for the past few months to learn coding and it has been an amazing experience.",
+      "role": "Full-stack Developer at Hashnode",
+      "imageUrl": "57Q95RBzc18"
+    },
+    {
+      "username": "Jeff Jarret",
+      "title": "Favorite Platform",
+      "comment": "CodingSpace is an amazing platform to practice your frontend development skills",
+      "role": "Junior Developer at FakeZen",
+      "imageUrl": "7YVZYZeITc8"
+    },
+    {
+      "username": "Arnold Palmer",
+      "title": "Amazing Challenges",
+      "comment": "Completing the challenges on CodingSpace has made me an all around better developer",
+      "role": "Senior Developer at Apple",
+      "imageUrl": "iFgRcqHznqg"
+    },
+    {
+      "username": "Amy Gauck",
+      "title": "Dream Come True",
+      "comment": "As a self-taught developer CodingSpace has given me more confidence in my frontend development skills.",
+      "role": "Self-taught Developer",
+      "imageUrl": "W7b3eDUb_2I"
+    }
+  ]
+}

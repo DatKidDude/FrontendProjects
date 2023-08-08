@@ -5,8 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonials UI Component</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="wrapper">
+        <header>
+          <h1 class="page-title">What Our Customers Are Saying</h1>
+          <div class="arrows-container">
+            <button class="arrow-btn prev-btn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrow-btn next-btn active">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </header>
+        <section
+          class="testimonials-container"
+          aria-labelledby="testimonial-carousel"
+        >
+          <h2 id="testimonial-carousel" class="visually-hidden">
+            Testimonials
+          </h2>
+          <ul class="slides-container">
+            <!-- <li class="slide">
+              <article class="slide-article">
+                <div class="user-rating">
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <article class="user-comment">
+                  <h3>Impressive Curriculum</h3>
+                  <p>
+                    I have tried several platforms in the past, but none have
+                    been as comprehensive and well-structured as CodingSpace.
+                  </p>
+                </article>
+                <footer class="user-profile">
+                  <img
+                    src="https://source.unsplash.com/QXevDflbl8A"
+                    class="user-img"
+                    alt=""
+                  />
+                  <div class="user-info">
+                    <p class="user-name">Emily Williams</p>
+                    <p class="user-role">Frontend Developer at Google</p>
+                  </div>
+                </footer>
+              </article>
+            </li> -->
+          </ul>
+        </section>
+        <!-- <div class="arrows-container">
+          <button class="arrow-btn left-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="arrow-btn right-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div> -->
+      </div>
+    </main>
+  </body>
 </html>
